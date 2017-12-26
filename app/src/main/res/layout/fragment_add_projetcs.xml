@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leeway.athirapb.Activity.Fragment.AddTicketsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold" android:textColor="@color/white"
+                android:background="@color/dracula_primary"
+
+                android:textSize="27dp"
+
+                android:text="ADD TICKET"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/ticket_heading"
+                android:hint="Project _heading"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/border"
+                android:textSize="12dp"
+              android:padding="14dp"
+                android:layout_height="wrap_content" />    <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/ticket_desc"
+            android:hint="ticket_desc"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/border"
+            android:textSize="12dp"
+          android:padding="14dp"
+
+            android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/assign_date"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/border"
+                android:textSize="12dp"
+              android:padding="14dp"
+                android:hint="assign_date"
+                android:layout_height="wrap_content" />     <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/submission_date"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/border"
+            android:textSize="12dp"
+          android:padding="14dp"
+            android:hint="submission_date"
+            android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/team_strength"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/border"
+                android:textSize="12dp"
+              android:padding="14dp"
+                android:hint="team_strength"
+                android:layout_height="wrap_content" />
+            <com.cunoraz.tagview.TagView
+                xmlns:tagview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tag_group"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contextClickable="true"
+                tagview:lineMargin="5dp"
+                tagview:tagMargin="5dp"
+                />
+
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="12dp"
+                android:layout_margin="10dp"
+                android:id="@+id/category"
+              android:padding="14dp"
+                android:hint="Concept type"/>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/client_name"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/border"
+                android:textSize="12dp"
+              android:padding="14dp"
+                android:hint="client_name"
+                android:layout_height="wrap_content" />      <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/client_phnumber"
+            android:hint="client_phnumber"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/border"
+            android:textSize="12dp"
+          android:padding="14dp"
+            android:layout_height="wrap_content" />
+            <EditText
+                android:layout_margin="10dp"
+
+
+                android:background="@drawable/border"
+                android:textSize="12dp"
+              android:padding="14dp"
+                android:layout_width="match_parent"
+                android:id="@+id/estimated_cost"
+                android:hint="estimated_cost"
+                android:layout_height="wrap_content" />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:id="@+id/new_adds"
+                android:hint="ADD IMAGE"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerView"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="SAVE"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_gravity="center"
+                android:id="@+id/savedata"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</FrameLayout>

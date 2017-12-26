@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linr"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clickid"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:orientation="vertical">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/prjct_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="@dimen/text_margin"
+                    android:src="@drawable/imagesss"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+
+                <TextView
+
+                    android:id="@+id/prjct_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="first"
+                     />
+            </LinearLayout>
+            <!--</LinearLayout>-->
+
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+              android:layout_margin="10dp"
+
+
+                android:text="description"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/msg_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/text_margin"
+                    android:text="10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/groups"
+                  />
+
+                <TextView
+                    android:id="@+id/pro_dates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/groups" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/text_margin"
+
+                    android:text="10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_person_outline_black_24dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

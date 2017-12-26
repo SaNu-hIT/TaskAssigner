@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leeway.athirapb.Activity.Fragment.AddTicketsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:textSize="27dp"
+                android:text="ADD STATUS"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/status_title"
+                android:hint="status_title" android:layout_margin="10dp"
+
+                android:background="@drawable/border"
+                android:textSize="12dp"
+                android:padding="14dp"
+                android:layout_height="wrap_content" />    <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/status_desc"
+            android:hint="status_desc" android:layout_margin="10dp"
+
+            android:background="@drawable/border"
+            android:textSize="12dp"
+            android:padding="14dp"
+            android:layout_height="wrap_content" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/cur_date" android:layout_margin="10dp"
+
+        android:background="@drawable/border"
+        android:textSize="12dp"
+        android:padding="14dp"
+            android:hint="cur_date"
+            android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="SAVE"
+                android:layout_gravity="center"
+                android:id="@+id/savedata"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
